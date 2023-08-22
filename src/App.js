@@ -5,7 +5,7 @@ function App() {
   var innerAnswer = "Answer Goes here"
   const gptTrigger = async () => {
       const API_KEY = process.env.REACT_APP_SECRET_KEY;
-      var gptQuestion = "Explain Quant Trading to someone who knows math up to Calc 2";
+      var gptQuestion = "Explain why lebron left cleveland in 2010";
       const options = {
         method: "POST",
         headers: {
@@ -40,7 +40,7 @@ function App() {
         <header className="App-header">
           
         </header>
-      <button onClick={gptTrigger}> Finance App Button  </button>
+      <button onClick={gptTrigger}> basketball trade Button  </button>
       <br />
       <p id="answerDiv" > answer goes here </p> 
       </div>
